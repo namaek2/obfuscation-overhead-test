@@ -1,0 +1,2 @@
+JMH S 21 org.sample.forObfTest S 49 org.sample.jmh_generated.forObfTest_test1_jmhTest S 5 test1 S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 18 org.sample.forTest S 46 org.sample.jmh_generated.forTest_test1_jmhTest S 5 test1 S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
