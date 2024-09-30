@@ -30,7 +30,7 @@ forTest.test1  thrpt    5  33.149 ± 7.948  ops/ms
 ```
 ### Obfuscated
 ```
-Result "org.sample.forObfTest.test1":
+Result "forObfTest.test1":
   26.867 ±(99.9%) 4.634 ops/ms [Average]
   (min, avg, max) = (25.084, 26.867, 28.174), stdev = 1.204
   CI (99.9%): [22.233, 31.502] (assumes normal distribution)
