@@ -18,26 +18,40 @@
 ## Result
 ### Original
 ```
-Result "org.sample.forTest.test1":
-  33.149 ±(99.9%) 7.948 ops/ms [Average]
-  (min, avg, max) = (30.829, 33.149, 34.797), stdev = 2.064
-  CI (99.9%): [25.201, 41.097] (assumes normal distribution)
-
-# Run complete. Total time: 00:01:43
-
-Benchmark       Mode  Cnt   Score   Error   Units
-forTest.test1  thrpt    5  33.149 ± 7.948  ops/ms
-```
-### Obfuscated
-```
 Result "forObfTest.test1":
-  26.867 ±(99.9%) 4.634 ops/ms [Average]
-  (min, avg, max) = (25.084, 26.867, 28.174), stdev = 1.204
-  CI (99.9%): [22.233, 31.502] (assumes normal distribution)
+35.323 ±(99.9%) 31.673 ops/ms [Average]
+  (min, avg, max) = (21.593, 35.323, 43.684), stdev = 8.225
+  CI (99.9%): [3.650, 66.996] (assumes normal distribution)
 
-# Run complete. Total time: 00:01:43
+Benchmark       Mode  Cnt   Score    Error   Units
+forTest.test1  thrpt    5  35.323 ± 31.673  ops/ms
 
-Benchmark          Mode  Cnt   Score   Error   Units
-forObfTest.test1  thrpt    5  26.867 ± 4.634  ops/ms
+Process finished with exit code 0
 ```
+### Taint Bomb
+```
+Result "org.sample.forTest.test1":
+  32.105 ±(99.9%) 31.047 ops/ms [Average]
+  (min, avg, max) = (23.288, 32.105, 43.017), stdev = 8.063
+  CI (99.9%): [1.058, 63.152] (assumes normal distribution)
+
+Benchmark       Mode  Cnt   Score    Error   Units
+forTest.test1  thrpt    5  32.105 ± 31.047  ops/ms
+
+Process finished with exit code 0
+```
+
+### jObf
+```
+Result "org.sample.forTest.test1":
+  28.294 ±(99.9%) 21.934 ops/ms [Average]
+  (min, avg, max) = (22.236, 28.294, 35.932), stdev = 5.696
+  CI (99.9%): [6.360, 50.228] (assumes normal distribution)
+  
+Benchmark       Mode  Cnt   Score    Error   Units
+forTest.test1  thrpt    5  28.294 ± 21.934  ops/ms
+
+Process finished with exit code 0
+```
+
 
