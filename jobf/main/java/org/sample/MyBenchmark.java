@@ -49,14 +49,14 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 public class MyBenchmark {
 
     public void testMethod() {
-        ObfuscationTest.mainTest();
+        forTest.test1();
     }
 
 
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
 
-                .include(ObfuscationTest.class.getSimpleName())  //난독화된 클래스
+                .include(forTest.class.getSimpleName())  //난독화된 클래스
                 //.include(forTest.class.getSimpleName())   //난독화되지 않은 클래스
 
                 .warmupIterations(1) // 사전 테스트 횟수
